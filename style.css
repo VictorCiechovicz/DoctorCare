@@ -539,8 +539,39 @@ footer .social-links {
     color: white;
   }
 
+  nav#navigation .menu li a {
+    transition: opacity 0.4s;
+  }
   nav#navigation .menu li a:hover {
     opacity: 1;
     font-weight: 700;
+  }
+
+  nav#navigation .menu li a::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: var(--primary-color);
+
+    position: relative;
+    bottom: -2rem;
+    left: -1rem;
+
+    display: block;
+
+    transform: width 0.2s;
+  }
+
+  nav#navigation.scroll .menu li a::after {
+    background-color: white;
+  }
+
+  nav#navigation .menu li a:hover::after {
+    padding-inline: 1.3rem;
+    width: 100%;
+  }
+
+  nav#navigation.scroll .menu li a:hover {
+    opacity: 1;
   }
 }
