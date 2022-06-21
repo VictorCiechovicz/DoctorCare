@@ -664,6 +664,24 @@ footer .social-links {
   /*=========CONTACT==============*/
   #contact .wrapper {
     grid-template-columns: 1fr 1fr;
-    grid-area: 'A B';
+    grid-template-areas: 'A B';
+  }
+
+  #contact img {
+    width: 48rem;
+  }
+
+  #contact .wrapper {
+    margin-bottom: 10rem;
+  }
+
+  /*=========FOOTER==============*/
+
+  footer .wrapper {
+    text-align: center;
+    justify-content: center;
+  }
+  footer .social-links {
+    justify-content: center;
   }
 }
